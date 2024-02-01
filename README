@@ -1,0 +1,16 @@
+It's not perfect but does the trick (for me)
+
+* discover devices in subnets that responds to ping
+* descover specified ports on found devices
+* adds host group for each scanned subnet
+* adds service goups
+* restarts nagios
+
+USAGE:
+- place files in the nagios/etc folder
+- edit :
+  variables in nagios_discover-config.sh
+  subnets in the function function discover() in nagios_discover_hosts.sh
+  ports in the function function discover() in nagios_discover_services.sh
+- run :
+  nagios_discover.sh
